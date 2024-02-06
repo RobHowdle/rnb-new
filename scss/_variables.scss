@@ -29,7 +29,6 @@
 // Ticket Button
 .ticket {
 	position: relative;
-	min-width: fit-content;
 
 	.overlay-text {
 		position: absolute;
@@ -43,6 +42,7 @@
 
 		span {
 			text-transform: uppercase;
+			font-size: rem(24);
 		}
 	}
 }

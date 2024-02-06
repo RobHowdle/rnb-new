@@ -1,0 +1,30 @@
+.header {
+	padding-block: 0.5rem 2rem;
+	padding-inline: rem(130);
+
+	.img-wrapper {
+		max-width: 466px;
+		padding-top: 4.5rem;
+
+		&--right img {
+			transform: rotateY(180deg);
+		}
+	}
+
+	.logo {
+		max-width: 240px;
+	}
+
+	.ticket {
+		max-width: 125px;
+		padding-top: 4rem;
+
+		img {
+			width: 100%;
+		}
+
+		.overlay-text {
+			padding-top: 4rem;
+		}
+	}
+}
