@@ -1,0 +1,249 @@
+/* All site global styling */
+// Font Import
+@import url("https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Protest+Strike&display=swap");
+
+// Mixins
+// Converts PX to REM
+$html-font-size: 16px;
+
+@function stripUnit($value) {
+	@return $value / ($value * 0 + 1);
+}
+@function rem($pxValue) {
+	@return #{stripUnit($pxValue) / stripUnit($html-font-size)}rem;
+}
+
+// Colour Variables
+$grey: #868e95;
+$medBlue: #007bff;
+$white: #fff;
+$black: #000;
+
+/* Defaults */
+// reset everything
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	border: 0 solid transparent;
+}
+
+// prevent iOS font size change
+html {
+	-webkit-text-size-adjust: 100%;
+}
+
+// reset body line-height
+body {
+	min-height: 100vh;
+	line-height: 1;
+	text-rendering: optimizeSpeed;
+	background-image: url("../media/img/background.webp");
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+	background-color: $black;
+	color: $white;
+	font-weight: 400;
+}
+
+// all media elements set to block and full width
+img,
+svg,
+video,
+canvas,
+audio,
+iframe,
+embed,
+object {
+	display: block;
+	max-width: 100%;
+}
+
+// inherit fonts for inputs and buttons
+input,
+button,
+textarea,
+select {
+	font: inherit;
+	line-height: inherit;
+	color: inherit;
+}
+
+// collapse table
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+// assign button hover state
+button,
+[role="button"] {
+	cursor: pointer;
+	background-color: transparent;
+	-webkit-tap-highlight-color: transparent;
+	&:focus {
+		outline: 0;
+	}
+}
+
+// reset anchor style
+a {
+	cursor: pointer;
+	color: inherit;
+	text-decoration: inherit;
+	-webkit-tap-highlight-color: transparent;
+}
+
+// reset heading style
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-size: inherit;
+	font-weight: inherit;
+}
+
+// reset list style
+ol,
+ul {
+	list-style: none;
+}
+
+// reset text input style
+[type="date"],
+[type="datetime"],
+[type="datetime-local"],
+[type="email"],
+[type="month"],
+[type="number"],
+[type="password"],
+[type="search"],
+[type="tel"],
+[type="text"],
+[type="time"],
+[type="url"],
+[type="week"],
+textarea,
+select {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	width: 100%;
+	&:focus {
+		outline: 0;
+	}
+}
+
+// reset firefox placeholder opacity
+::-moz-placeholder {
+	opacity: 1;
+}
+
+// reset textarea style
+textarea {
+	// move the label to the top
+	vertical-align: top;
+
+	// turn off scroll bars in IE unless needed
+	overflow: auto;
+}
+
+// reset checkbox and radio style
+[type="checkbox"],
+[type="radio"] {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	&:focus {
+		outline: 0;
+	}
+}
+
+// remove all animations, transitions and smooth scroll for people that prefer not to see them
+@media (prefers-reduced-motion: reduce) {
+	html:focus-within {
+		scroll-behavior: auto;
+	}
+
+	*,
+	*::before,
+	*::after {
+		animation-duration: 0.01ms !important;
+		animation-iteration-count: 1 !important;
+		transition-duration: 0.01ms !important;
+		scroll-behavior: auto !important;
+	}
+}
+
+// Fonts
+h1,
+.h1 {
+	font-size: rem(40);
+	font-family: "Protest Strike", sans-serif;
+	font-style: normal;
+	color: $grey;
+}
+h2,
+.h2 {
+	font-size: rem(35);
+	font-family: "Protest Strike", sans-serif;
+	font-style: normal;
+	color: $grey;
+}
+h3,
+.h3 {
+	font-size: rem(32);
+	font-family: "Protest Strike", sans-serif;
+	font-style: normal;
+	color: $grey;
+}
+h4,
+.h4 {
+	font-size: rem(30);
+	font-family: "Protest Strike", sans-serif;
+	font-style: normal;
+	color: $grey;
+}
+h5,
+.h5 {
+	font-size: rem(24);
+	font-family: "Libre Franklin", sans-serif;
+	font-style: normal;
+	font-optical-sizing: auto;
+}
+h6,
+.h6 {
+	font-size: rem(20);
+	font-family: "Libre Franklin", sans-serif;
+	font-style: normal;
+	font-optical-sizing: auto;
+}
+p,
+.p {
+	font-size: rem(16);
+	font-family: "Libre Franklin", sans-serif;
+	font-style: normal;
+	font-optical-sizing: auto;
+}
+button,
+.btn {
+	font-size: rem(32);
+	font-family: "Libre Franklin", sans-serif;
+	font-style: normal;
+	font-optical-sizing: auto;
+}
+a {
+	font-size: rem(16);
+	font-family: "Libre Franklin", sans-serif;
+	font-style: normal;
+	font-optical-sizing: auto;
+}
