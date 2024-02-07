@@ -4,252 +4,6 @@
 /* Defaults */
 @import url("https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Protest+Strike&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Protest+Strike&display=swap");
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-
-* {
-  margin: 0;
-  padding: 0;
-  border: 0 solid transparent;
-}
-
-html {
-  -webkit-text-size-adjust: 100%;
-}
-
-body {
-  min-height: 100vh;
-  line-height: 1;
-  text-rendering: optimizeSpeed;
-  background-image: url("../media/img/background.webp");
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-  background-color: #000;
-  color: #fff;
-  font-weight: 400;
-}
-
-img,
-svg,
-video,
-canvas,
-audio,
-iframe,
-embed,
-object {
-  display: block;
-  max-width: 100%;
-}
-
-input,
-button,
-textarea,
-select {
-  font: inherit;
-  line-height: inherit;
-  color: inherit;
-}
-
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-
-button,
-[role=button] {
-  cursor: pointer;
-  background-color: transparent;
-  -webkit-tap-highlight-color: transparent;
-}
-button:focus,
-[role=button]:focus {
-  outline: 0;
-}
-
-a {
-  cursor: pointer;
-  color: inherit;
-  text-decoration: inherit;
-  -webkit-tap-highlight-color: transparent;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-size: inherit;
-  font-weight: inherit;
-}
-
-ol,
-ul {
-  list-style: none;
-}
-
-[type=date],
-[type=datetime],
-[type=datetime-local],
-[type=email],
-[type=month],
-[type=number],
-[type=password],
-[type=search],
-[type=tel],
-[type=text],
-[type=time],
-[type=url],
-[type=week],
-textarea,
-select {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  width: 100%;
-}
-[type=date]:focus,
-[type=datetime]:focus,
-[type=datetime-local]:focus,
-[type=email]:focus,
-[type=month]:focus,
-[type=number]:focus,
-[type=password]:focus,
-[type=search]:focus,
-[type=tel]:focus,
-[type=text]:focus,
-[type=time]:focus,
-[type=url]:focus,
-[type=week]:focus,
-textarea:focus,
-select:focus {
-  outline: 0;
-}
-
-::-moz-placeholder {
-  opacity: 1;
-}
-
-textarea {
-  vertical-align: top;
-  overflow: auto;
-}
-
-[type=checkbox],
-[type=radio] {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-}
-[type=checkbox]:focus,
-[type=radio]:focus {
-  outline: 0;
-}
-
-@media (prefers-reduced-motion: reduce) {
-  html:focus-within {
-    scroll-behavior: auto;
-  }
-  *,
-  *::before,
-  *::after {
-    animation-duration: 0.01ms !important;
-    animation-iteration-count: 1 !important;
-    transition-duration: 0.01ms !important;
-    scroll-behavior: auto !important;
-  }
-}
-.inner-wrapper--1680 {
-  max-width: 105rem;
-  margin-inline: auto;
-  display: flex;
-  justify-content: space-between;
-}
-
-h1,
-.h1 {
-  font-size: 2.5rem;
-  font-family: "Protest Strike", sans-serif;
-  font-style: normal;
-  color: #868e95;
-}
-
-h2,
-.h2 {
-  font-size: 2.1875rem;
-  font-family: "Protest Strike", sans-serif;
-  font-style: normal;
-  color: #868e95;
-}
-
-h3,
-.h3 {
-  font-size: 2rem;
-  font-family: "Protest Strike", sans-serif;
-  font-style: normal;
-  color: #868e95;
-}
-
-h4,
-.h4 {
-  font-size: 1.875rem;
-  font-family: "Protest Strike", sans-serif;
-  font-style: normal;
-  color: #868e95;
-}
-
-h5,
-.h5 {
-  font-size: 1.5rem;
-  font-family: "Libre Franklin", sans-serif;
-  font-style: normal;
-  font-optical-sizing: auto;
-}
-
-h6,
-.h6 {
-  font-size: 1.25rem;
-  font-family: "Libre Franklin", sans-serif;
-  font-style: normal;
-  font-optical-sizing: auto;
-}
-
-p,
-.p {
-  font-size: 1rem;
-  font-family: "Libre Franklin", sans-serif;
-  font-style: normal;
-  font-optical-sizing: auto;
-}
-
-button,
-.btn {
-  font-size: 2rem;
-  font-family: "Libre Franklin", sans-serif;
-  font-style: normal;
-  font-optical-sizing: auto;
-}
-
-a {
-  font-size: 1rem;
-  font-family: "Libre Franklin", sans-serif;
-  font-style: normal;
-  font-optical-sizing: auto;
-}
-
-@media screen and (max-width: 1680px) {
-  .header {
-    padding-inline: 5rem;
-  }
-}
-/* All site global styling */
-/* Defaults */
 *,
 *::before,
 *::after {
@@ -785,4 +539,77 @@ a {
 }
 .header .ticket .overlay-text {
   padding-top: 4rem;
+}
+
+/* Responsive */
+@media only screen and (max-width: 1920px) {
+  .header {
+    padding-inline: 5rem;
+  }
+}
+@media only screen and (max-width: 1680px) {
+  .header {
+    padding-inline: 2.5rem;
+  }
+  .header .img-wrapper {
+    max-width: 400px;
+    padding-top: 5.5rem;
+  }
+}
+@media only screen and (max-width: 1366px) {
+  .header {
+    padding-inline: 1.25rem;
+  }
+  .header .img-wrapper {
+    max-width: 350px;
+    padding-top: 4.5rem;
+  }
+  .header .logo {
+    max-width: 200px;
+  }
+}
+@media only screen and (max-width: 1199px) {
+  .header .inner-wrapper--1680 {
+    justify-content: space-evenly;
+  }
+  .header .img-wrapper {
+    display: none;
+  }
+  .header .logo {
+    max-width: 150px;
+  }
+  .header .ticket {
+    max-width: 100px;
+    padding-top: 3rem;
+  }
+  .header .ticket .overlay-text {
+    padding-top: 3rem;
+  }
+  .header .ticket .overlay-text span {
+    font-size: 1rem;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .header .logo {
+    max-width: 125px;
+  }
+  .header .ticket,
+  .header .ticket .overlay-text {
+    padding-top: 2rem;
+  }
+}
+@media only screen and (max-width: 575px) {
+  .header {
+    padding-inline: 0.625rem;
+  }
+  .header .logo {
+    max-width: 100px;
+  }
+  .header .ticket {
+    max-width: 90px;
+  }
+  .header .ticket,
+  .header .ticket .overlay-text {
+    padding-top: 1.75rem;
+  }
 }
