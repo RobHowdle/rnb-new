@@ -532,13 +532,13 @@ a {
 }
 .header .ticket {
   max-width: 125px;
-  padding-top: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 4rem;
 }
 .header .ticket img {
   width: 100%;
-}
-.header .ticket .overlay-text {
-  padding-top: 4rem;
 }
 
 /* Responsive */
@@ -560,6 +560,9 @@ a {
   .header {
     padding-inline: 1.25rem;
   }
+  .header .ticket {
+    margin-top: 3.5rem;
+  }
   .header .img-wrapper {
     max-width: 350px;
     padding-top: 4.5rem;
@@ -580,10 +583,7 @@ a {
   }
   .header .ticket {
     max-width: 100px;
-    padding-top: 3rem;
-  }
-  .header .ticket .overlay-text {
-    padding-top: 3rem;
+    margin-top: 2rem;
   }
   .header .ticket .overlay-text span {
     font-size: 1rem;
@@ -592,10 +592,6 @@ a {
 @media only screen and (max-width: 991px) {
   .header .logo {
     max-width: 125px;
-  }
-  .header .ticket,
-  .header .ticket .overlay-text {
-    padding-top: 2rem;
   }
 }
 @media only screen and (max-width: 575px) {
@@ -607,9 +603,5 @@ a {
   }
   .header .ticket {
     max-width: 90px;
-  }
-  .header .ticket,
-  .header .ticket .overlay-text {
-    padding-top: 1.75rem;
   }
 }

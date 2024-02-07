@@ -17,14 +17,13 @@
 
 	.ticket {
 		max-width: 125px;
-		padding-top: 4rem;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin-top: 4rem;
 
 		img {
 			width: 100%;
-		}
-
-		.overlay-text {
-			padding-top: 4rem;
 		}
 	}
 }
@@ -50,6 +49,10 @@
 @media only screen and (max-width: 1366px) {
 	.header {
 		padding-inline: rem(20);
+
+		.ticket {
+			margin-top: 3.5rem;
+		}
 
 		.img-wrapper {
 			max-width: 350px;
@@ -78,14 +81,10 @@
 
 		.ticket {
 			max-width: 100px;
-			padding-top: 3rem;
+			margin-top: 2rem;
 
-			.overlay-text {
-				padding-top: 3rem;
-
-				span {
-					font-size: rem(16);
-				}
+			.overlay-text span {
+				font-size: rem(16);
 			}
 		}
 	}
@@ -95,11 +94,6 @@
 	.header {
 		.logo {
 			max-width: 125px;
-		}
-
-		.ticket,
-		.ticket .overlay-text {
-			padding-top: 2rem;
 		}
 	}
 }
@@ -114,11 +108,6 @@
 
 		.ticket {
 			max-width: 90px;
-		}
-
-		.ticket,
-		.ticket .overlay-text {
-			padding-top: 1.75rem;
 		}
 	}
 }
