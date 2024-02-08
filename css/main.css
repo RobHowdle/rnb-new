@@ -4,6 +4,8 @@
 /* Defaults */
 @import url("https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Protest+Strike&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Protest+Strike&display=swap");
 *,
 *::before,
 *::after {
@@ -163,6 +165,10 @@ textarea {
     scroll-behavior: auto !important;
   }
 }
+.res--140 {
+  padding-inline: 8.75rem;
+}
+
 .inner-wrapper--1680 {
   max-width: 105rem;
   margin-inline: auto;
@@ -176,6 +182,8 @@ h1,
   font-family: "Protest Strike", sans-serif;
   font-style: normal;
   color: #868e95;
+  text-transform: uppercase;
+  padding-top: 1rem;
 }
 
 h2,
@@ -224,6 +232,8 @@ p,
   font-family: "Libre Franklin", sans-serif;
   font-style: normal;
   font-optical-sizing: auto;
+  line-height: 1.2;
+  letter-spacing: 0.0625rem;
 }
 
 button,
@@ -241,6 +251,35 @@ a {
   font-optical-sizing: auto;
 }
 
+/* Margin/ Padding */
+.mt-1 {
+  margin-top: 1rem;
+}
+
+.mt-2 {
+  margin-top: 2rem;
+}
+
+.pb-1 {
+  padding-bottom: 1rem;
+}
+
+/* Responsive */
+@media only screen and (max-width: 1920px) {
+  .res--140 {
+    padding-inline: 5rem;
+  }
+}
+@media only screen and (max-width: 1680px) {
+  .res--140 {
+    padding-inline: 2.5rem;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .res--140 {
+    padding-inline: 0.625rem;
+  }
+}
 .font-weight --light {
   font-weight: 300;
 }
@@ -438,6 +477,10 @@ textarea {
     scroll-behavior: auto !important;
   }
 }
+.res--140 {
+  padding-inline: 8.75rem;
+}
+
 .inner-wrapper--1680 {
   max-width: 105rem;
   margin-inline: auto;
@@ -451,6 +494,8 @@ h1,
   font-family: "Protest Strike", sans-serif;
   font-style: normal;
   color: #868e95;
+  text-transform: uppercase;
+  padding-top: 1rem;
 }
 
 h2,
@@ -499,6 +544,8 @@ p,
   font-family: "Libre Franklin", sans-serif;
   font-style: normal;
   font-optical-sizing: auto;
+  line-height: 1.2;
+  letter-spacing: 0.0625rem;
 }
 
 button,
@@ -516,6 +563,35 @@ a {
   font-optical-sizing: auto;
 }
 
+/* Margin/ Padding */
+.mt-1 {
+  margin-top: 1rem;
+}
+
+.mt-2 {
+  margin-top: 2rem;
+}
+
+.pb-1 {
+  padding-bottom: 1rem;
+}
+
+/* Responsive */
+@media only screen and (max-width: 1920px) {
+  .res--140 {
+    padding-inline: 5rem;
+  }
+}
+@media only screen and (max-width: 1680px) {
+  .res--140 {
+    padding-inline: 2.5rem;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .res--140 {
+    padding-inline: 0.625rem;
+  }
+}
 .header {
   padding-block: 0.5rem 2rem;
   padding-inline: 8.125rem;
@@ -604,4 +680,381 @@ a {
   .header .ticket {
     max-width: 90px;
   }
+}
+/* All site global styling */
+/* Defaults */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0 solid transparent;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  min-height: 100vh;
+  line-height: 1;
+  text-rendering: optimizeSpeed;
+  background-image: url("../media/img/background.webp");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-color: #000;
+  color: #fff;
+  font-weight: 400;
+}
+
+img,
+svg,
+video,
+canvas,
+audio,
+iframe,
+embed,
+object {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+  line-height: inherit;
+  color: inherit;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+button,
+[role=button] {
+  cursor: pointer;
+  background-color: transparent;
+  -webkit-tap-highlight-color: transparent;
+}
+button:focus,
+[role=button]:focus {
+  outline: 0;
+}
+
+a {
+  cursor: pointer;
+  color: inherit;
+  text-decoration: inherit;
+  -webkit-tap-highlight-color: transparent;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+[type=date],
+[type=datetime],
+[type=datetime-local],
+[type=email],
+[type=month],
+[type=number],
+[type=password],
+[type=search],
+[type=tel],
+[type=text],
+[type=time],
+[type=url],
+[type=week],
+textarea,
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 100%;
+}
+[type=date]:focus,
+[type=datetime]:focus,
+[type=datetime-local]:focus,
+[type=email]:focus,
+[type=month]:focus,
+[type=number]:focus,
+[type=password]:focus,
+[type=search]:focus,
+[type=tel]:focus,
+[type=text]:focus,
+[type=time]:focus,
+[type=url]:focus,
+[type=week]:focus,
+textarea:focus,
+select:focus {
+  outline: 0;
+}
+
+::-moz-placeholder {
+  opacity: 1;
+}
+
+textarea {
+  vertical-align: top;
+  overflow: auto;
+}
+
+[type=checkbox],
+[type=radio] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+[type=checkbox]:focus,
+[type=radio]:focus {
+  outline: 0;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+.res--140 {
+  padding-inline: 8.75rem;
+}
+
+.inner-wrapper--1680 {
+  max-width: 105rem;
+  margin-inline: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+h1,
+.h1 {
+  font-size: 2.5rem;
+  font-family: "Protest Strike", sans-serif;
+  font-style: normal;
+  color: #868e95;
+  text-transform: uppercase;
+  padding-top: 1rem;
+}
+
+h2,
+.h2 {
+  font-size: 2.1875rem;
+  font-family: "Protest Strike", sans-serif;
+  font-style: normal;
+  color: #868e95;
+}
+
+h3,
+.h3 {
+  font-size: 2rem;
+  font-family: "Protest Strike", sans-serif;
+  font-style: normal;
+  color: #868e95;
+}
+
+h4,
+.h4 {
+  font-size: 1.875rem;
+  font-family: "Protest Strike", sans-serif;
+  font-style: normal;
+  color: #868e95;
+}
+
+h5,
+.h5 {
+  font-size: 1.5rem;
+  font-family: "Libre Franklin", sans-serif;
+  font-style: normal;
+  font-optical-sizing: auto;
+}
+
+h6,
+.h6 {
+  font-size: 1.25rem;
+  font-family: "Libre Franklin", sans-serif;
+  font-style: normal;
+  font-optical-sizing: auto;
+}
+
+p,
+.p {
+  font-size: 1rem;
+  font-family: "Libre Franklin", sans-serif;
+  font-style: normal;
+  font-optical-sizing: auto;
+  line-height: 1.2;
+  letter-spacing: 0.0625rem;
+}
+
+button,
+.btn {
+  font-size: 2rem;
+  font-family: "Libre Franklin", sans-serif;
+  font-style: normal;
+  font-optical-sizing: auto;
+}
+
+a {
+  font-size: 1rem;
+  font-family: "Libre Franklin", sans-serif;
+  font-style: normal;
+  font-optical-sizing: auto;
+}
+
+/* Margin/ Padding */
+.mt-1 {
+  margin-top: 1rem;
+}
+
+.mt-2 {
+  margin-top: 2rem;
+}
+
+.pb-1 {
+  padding-bottom: 1rem;
+}
+
+/* Responsive */
+@media only screen and (max-width: 1920px) {
+  .res--140 {
+    padding-inline: 5rem;
+  }
+}
+@media only screen and (max-width: 1680px) {
+  .res--140 {
+    padding-inline: 2.5rem;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .res--140 {
+    padding-inline: 0.625rem;
+  }
+}
+.font-weight --light {
+  font-weight: 300;
+}
+.font-weight --reg {
+  font-weight: 400;
+}
+.font-weight --semi {
+  font-weight: 600;
+}
+.font-weight --bold {
+  font-weight: 700;
+}
+
+.blue-ds {
+  text-shadow: 0 4px 4px #000;
+  filter: drop-shadow(5px 5px 2px #007bff);
+}
+
+.ticket {
+  position: relative;
+}
+.ticket .overlay-text {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.ticket .overlay-text span {
+  text-transform: uppercase;
+  font-size: 1.5rem;
+}
+
+.grid-wrapper {
+  display: grid;
+  grid-template-columns: 500px 1fr 500px;
+  grid-gap: 4rem;
+  width: 100%;
+}
+.grid-wrapper .left-col {
+  grid-column: 1/2;
+}
+.grid-wrapper .center-col {
+  grid-column: 2/3;
+}
+.grid-wrapper .right-col {
+  grid-column: 3/4;
+  text-align: right;
+}
+.grid-wrapper table {
+  background-color: rgba(134, 142, 149, 0.8);
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  border-color: #007bff;
+  border-style: solid;
+  border-width: 2px;
+}
+.grid-wrapper table tbody tr:nth-child(odd) td {
+  background-color: #c6c4c4;
+}
+.grid-wrapper table tbody tr td {
+  color: #000;
+  font-weight: 700;
+}
+.grid-wrapper table td {
+  padding-inline: 0.5rem;
+}
+.grid-wrapper table td:not(:first-child) {
+  padding-block: 0.5rem;
+}
+.grid-wrapper table td:first-child {
+  padding-block: 1rem;
+}
+
+.contacts-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.contacts-wrapper .contact {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 1rem;
+}
+
+.socials {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  justify-content: flex-end;
+}
+
+.map {
+  display: flex;
+  justify-content: flex-end;
 }

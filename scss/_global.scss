@@ -13,9 +13,11 @@ $html-font-size: 16px;
 
 // Colour Variables
 $grey: #868e95;
+$lightGrey: #c6c4c4;
 $medBlue: #007bff;
 $white: #fff;
 $black: #000;
+$transGrey: rgba(134, 142, 149, 0.8);
 
 /* Defaults */
 // reset everything
@@ -181,6 +183,12 @@ textarea {
 	}
 }
 
+.res {
+	&--140 {
+		padding-inline: rem(140);
+	}
+}
+
 .inner-wrapper {
 	&--1680 {
 		max-width: rem(1680);
@@ -197,6 +205,8 @@ h1,
 	font-family: "Protest Strike", sans-serif;
 	font-style: normal;
 	color: $grey;
+	text-transform: uppercase;
+	padding-top: 1rem;
 }
 h2,
 .h2 {
@@ -239,6 +249,8 @@ p,
 	font-family: "Libre Franklin", sans-serif;
 	font-style: normal;
 	font-optical-sizing: auto;
+	line-height: 1.2;
+	letter-spacing: rem(1);
 }
 button,
 .btn {
@@ -253,3 +265,51 @@ a {
 	font-style: normal;
 	font-optical-sizing: auto;
 }
+
+/* Margin/ Padding */
+.mt-1 {
+	margin-top: 1rem;
+}
+
+.mt-2 {
+	margin-top: 2rem;
+}
+
+.pb-1 {
+	padding-bottom: 1rem;
+}
+
+/* Responsive */
+@media only screen and (max-width: 1920px) {
+	.res {
+		&--140 {
+			padding-inline: rem(80);
+		}
+	}
+}
+
+@media only screen and (max-width: 1680px) {
+	.res {
+		&--140 {
+			padding-inline: rem(40);
+		}
+	}
+}
+
+// @media only screen and (max-width: 1366px) {}
+
+// @media only screen and (max-width: 1199px) {}
+
+@media only screen and (max-width: 991px) {
+	.res {
+		&--140 {
+			padding-inline: rem(10);
+		}
+	}
+}
+
+// @media only screen and (max-width: 767px) {}
+
+// @media only screen and (max-width: 575px) {}
+
+// @media only screen and (max-width: 360px) {}
