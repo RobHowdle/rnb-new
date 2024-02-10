@@ -12,6 +12,11 @@
 
 	.center-col {
 		grid-column: 2/3;
+
+		.ticket {
+			width: 100%;
+			justify-content: center;
+		}
 	}
 
 	.right-col {
@@ -51,6 +56,21 @@
 			}
 		}
 	}
+
+	.ticket {
+		display: flex;
+		width: fit-content;
+
+		img {
+			max-width: 180px;
+		}
+
+		.overlay-text {
+			width: 100%;
+			justify-content: center;
+			color: $medBlue;
+		}
+	}
 }
 
 .contacts-wrapper {
@@ -77,3 +97,90 @@
 	display: flex;
 	justify-content: flex-end;
 }
+
+@media only screen and (max-width: 1920px) {
+	.grid-wrapper {
+		grid-gap: 3rem;
+	}
+}
+
+@media only screen and (max-width: 1680px) {
+	.grid-wrapper {
+		grid-gap: 2rem;
+		grid-template-columns: 400px 1fr 400px;
+	}
+}
+
+@media only screen and (max-width: 1366px) {
+	.grid-wrapper {
+		grid-template-columns: 350px 1fr 350px;
+	}
+}
+
+@media only screen and (max-width: 1199px) {
+	.grid-wrapper {
+		grid-template-columns: repeat(2, 1fr);
+		grid-template-rows: repeat(2, 1fr);
+
+		.left-col {
+			grid-row: 1/2;
+			grid-column: 1/2;
+		}
+
+		.right-col {
+			grid-row: 1/2;
+			grid-column: 2/3;
+		}
+
+		.center-col {
+			grid-row: 2/3;
+			grid-column: 1/3;
+		}
+	}
+}
+
+@media only screen and (max-width: 991px) {
+	.grid-wrapper {
+		grid-template-columns: 1fr;
+		grid-template-rows: repeat(3, auto);
+
+		.left-col {
+			grid-row: 1/2;
+			grid-column: 1/2;
+		}
+
+		.center-col {
+			grid-row: 2/3;
+			grid-column: 1/2;
+		}
+
+		.right-col {
+			grid-row: 3/4;
+			grid-column: 1/2;
+			margin-top: 4rem;
+		}
+
+		h1,
+		.h1,
+		p,
+		.p {
+			text-align: center;
+		}
+
+		.ticket {
+			width: 100%;
+			justify-content: center;
+		}
+
+		.contacts-wrapper .contact,
+		.socials {
+			justify-content: center;
+		}
+	}
+}
+
+// @media only screen and (max-width: 767px) {}
+
+// @media only screen and (max-width: 575px) {}
+
+// @media only screen and (max-width: 360px) {}

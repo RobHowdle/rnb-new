@@ -31,7 +31,6 @@
 					data.items.reverse();
 				}
 				data.items = data.items.slice(0, maxEvents);
-				console.log(data.items);
 
 				// Use map to transform data items into event HTML
 				var eventsHTML = data.items

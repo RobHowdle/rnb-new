@@ -83,6 +83,12 @@ foreach ($matches as $match) {
                 <div class="left-col">
                     <h1 class="blue-ds pb-1"><?php echo $welcomeData['title']; ?></h1>
                     <p><?php echo $welcomeData['text']; ?></p>
+                    <a href="history" class="btn ticket ticket--left mt-1">
+                        <img src="media/img/ticket.png">
+                        <div class="overlay-text">
+                            <span class="button-text">History</span>
+                        </div>
+                    </a>
                 </div>
                 <div class="center-col">
                     <table>
@@ -93,8 +99,13 @@ foreach ($matches as $match) {
                         </thead>
                         <tbody class="eventlist">
                         </tbody>
-
                     </table>
+                    <a href="history" class="btn ticket ticket--left mt-1">
+                        <img src="media/img/ticket.png">
+                        <div class="overlay-text">
+                            <span class="button-text">Tickets</span>
+                        </div>
+                    </a>
                 </div>
                 <div class="right-col">
                     <div class="upper-block">
@@ -136,23 +147,23 @@ foreach ($matches as $match) {
                     </div>
                     <div class="map mt-2">
                         <div class="mapouter">
-                            <div class="gmap_canvas"><iframe width=" 450" height="300" id="gmap_canvas"
+                            <div class="gmap_canvas"><iframe width="100%" height="100%" id="gmap_canvas"
                                     src="https://maps.google.com/maps?q=%20The%20Forum%20Music%20Centre%20Borough%20Road%20Darlington%20DL1%201SG&t=k&z=19&ie=UTF8&iwloc=&output=embed"
                                     frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><br>
                                 <style>
                                 .mapouter {
                                     position: relative;
                                     text-align: right;
-                                    height: 350px;
-                                    width: 450px;
+                                    height: 100%;
+                                    width: 100%;
                                 }
                                 </style>
                                 <style>
                                 .gmap_canvas {
                                     overflow: hidden;
                                     background: none !important;
-                                    height: 350px;
-                                    width: 450px;
+                                    height: 100%;
+                                    width: 100%;
                                 }
                                 </style>
                             </div>
