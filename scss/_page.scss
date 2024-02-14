@@ -8,14 +8,27 @@
 
 	.left-col {
 		grid-column: 1/2;
+
+		.ticket {
+			width: fit-content;
+
+			&:hover .overlay-text {
+				color: $white;
+			}
+		}
 	}
 
 	.center-col {
 		grid-column: 2/3;
 
 		.ticket {
-			width: 100%;
+			width: fit-content;
 			justify-content: center;
+			margin-inline: auto;
+
+			&:hover .overlay-text {
+				color: $white;
+			}
 		}
 	}
 
@@ -83,6 +96,16 @@
 		justify-content: flex-end;
 		align-items: center;
 		gap: 1rem;
+
+		.link {
+			transition-property: color;
+			transition-duration: 300ms;
+			transition-timing-function: ease-in-out;
+
+			&:hover {
+				color: $medBlue;
+			}
+		}
 	}
 }
 
@@ -91,6 +114,16 @@
 	flex-direction: row;
 	gap: 1rem;
 	justify-content: flex-end;
+
+	.link {
+		transition-property: color;
+		transition-duration: 300ms;
+		transition-timing-function: ease-in-out;
+
+		&:hover {
+			color: $medBlue;
+		}
+	}
 }
 
 .map {
@@ -147,6 +180,10 @@
 		.left-col {
 			grid-row: 1/2;
 			grid-column: 1/2;
+
+			.ticket {
+				width: 100%;
+			}
 		}
 
 		.center-col {
@@ -157,7 +194,11 @@
 		.right-col {
 			grid-row: 3/4;
 			grid-column: 1/2;
-			margin-top: 4rem;
+			margin-block: 4rem 2rem;
+
+			.mapouter {
+				height: 300px;
+			}
 		}
 
 		h1,
@@ -181,6 +222,10 @@
 
 // @media only screen and (max-width: 767px) {}
 
-// @media only screen and (max-width: 575px) {}
+@media only screen and (max-width: 575px) {
+	.grid-wrapper .right-col .mapouter {
+		height: 200px;
+	}
+}
 
 // @media only screen and (max-width: 360px) {}

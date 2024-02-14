@@ -191,10 +191,16 @@ textarea {
 
 .inner-wrapper {
 	&--1680 {
-		max-width: rem(1680);
-		margin-inline: auto;
-		display: flex;
-		justify-content: space-between;
+		&--desk {
+			max-width: rem(1680);
+			margin-inline: auto;
+			display: flex;
+			justify-content: space-between;
+		}
+
+		&--mob {
+			display: none;
+		}
 	}
 }
 
@@ -298,9 +304,23 @@ a {
 
 // @media only screen and (max-width: 1366px) {}
 
-// @media only screen and (max-width: 1199px) {}
+@media only screen and (max-width: 1199px) {
+	.res {
+		&--140 {
+			padding-inline: rem(30);
+		}
+	}
+}
 
 @media only screen and (max-width: 991px) {
+	.res {
+		&--140 {
+			padding-inline: rem(20);
+		}
+	}
+}
+
+@media only screen and (max-width: 767px) {
 	.res {
 		&--140 {
 			padding-inline: rem(10);
@@ -308,8 +328,34 @@ a {
 	}
 }
 
-// @media only screen and (max-width: 767px) {}
+@media only screen and (max-width: 575px) {
+	.inner-wrapper--1680 {
+		&--mob {
+			display: flex;
+			flex-direction: column;
+			gap: 2rem;
 
-// @media only screen and (max-width: 575px) {}
+			.upper {
+				margin: auto;
+				max-width: 150px;
+			}
+
+			.lower {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				gap: 4rem;
+
+				.ticket {
+					margin-top: 0;
+				}
+			}
+		}
+
+		&--desk {
+			display: none;
+		}
+	}
+}
 
 // @media only screen and (max-width: 360px) {}
