@@ -7,7 +7,7 @@
 
     <?php include 'includes/home_content.php'; ?>
 
-    <?php include 'footer.php'; ?>
+    <?php include 'includes/footer.php'; ?>
 
 
 </body>

@@ -229,6 +229,14 @@ h6,
   font-optical-sizing: auto;
 }
 
+li,
+.li {
+  font-size: 1.5rem;
+  font-family: "Libre Franklin", sans-serif;
+  font-style: normal;
+  font-optical-sizing: auto;
+}
+
 p,
 .p {
   font-size: 1rem;
@@ -580,6 +588,14 @@ h6,
   font-optical-sizing: auto;
 }
 
+li,
+.li {
+  font-size: 1.5rem;
+  font-family: "Libre Franklin", sans-serif;
+  font-style: normal;
+  font-optical-sizing: auto;
+}
+
 p,
 .p {
   font-size: 1rem;
@@ -755,6 +771,41 @@ a {
     max-width: 100px;
   }
 }
+footer {
+  margin-top: 8rem;
+  background-color: #000;
+  padding-block: 2rem;
+}
+footer .wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+footer .wrapper .logo {
+  max-width: 150px;
+  grid-column: 1/2;
+}
+footer .wrapper .links {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+  grid-column: 2/3;
+}
+footer .wrapper .links li {
+  text-transform: uppercase;
+  transition-property: color;
+  transition-duration: 300ms;
+  transition-timing-function: ease-in-out;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+footer .wrapper .links li:hover {
+  color: #007bff;
+}
+footer .wrapper .socials {
+  grid-column: 3/4;
+}
+
 /* All site global styling */
 /* Defaults */
 *,
@@ -975,6 +1026,14 @@ h5,
 h6,
 .h6 {
   font-size: 1.25rem;
+  font-family: "Libre Franklin", sans-serif;
+  font-style: normal;
+  font-optical-sizing: auto;
+}
+
+li,
+.li {
+  font-size: 1.5rem;
   font-family: "Libre Franklin", sans-serif;
   font-style: normal;
   font-optical-sizing: auto;

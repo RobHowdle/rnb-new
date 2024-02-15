@@ -1,0 +1,39 @@
+footer {
+	margin-top: 8rem;
+	background-color: $black;
+	padding-block: 2rem;
+
+	.wrapper {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+
+		.logo {
+			max-width: 150px;
+			grid-column: 1/2;
+		}
+
+		.links {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			gap: 1rem;
+			grid-column: 2/3;
+
+			li {
+				text-transform: uppercase;
+				transition-property: color;
+				transition-duration: 300ms;
+				transition-timing-function: ease-in-out;
+				width: fit-content;
+
+				&:hover {
+					color: $medBlue;
+				}
+			}
+		}
+
+		.socials {
+			grid-column: 3/4;
+		}
+	}
+}
