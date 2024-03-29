@@ -213,6 +213,7 @@ h1,
 	color: $grey;
 	text-transform: uppercase;
 	padding-top: 1rem;
+	letter-spacing: rem(1.5);
 }
 h2,
 .h2 {
@@ -220,6 +221,7 @@ h2,
 	font-family: "Protest Strike", sans-serif;
 	font-style: normal;
 	color: $grey;
+	letter-spacing: rem(1.5);
 }
 h3,
 .h3 {
@@ -227,6 +229,7 @@ h3,
 	font-family: "Protest Strike", sans-serif;
 	font-style: normal;
 	color: $grey;
+	letter-spacing: rem(1.5);
 }
 h4,
 .h4 {
@@ -234,6 +237,7 @@ h4,
 	font-family: "Protest Strike", sans-serif;
 	font-style: normal;
 	color: $grey;
+	letter-spacing: rem(1.5);
 }
 h5,
 .h5 {
@@ -241,6 +245,7 @@ h5,
 	font-family: "Libre Franklin", sans-serif;
 	font-style: normal;
 	font-optical-sizing: auto;
+	letter-spacing: rem(1.5);
 }
 h6,
 .h6 {
@@ -248,6 +253,7 @@ h6,
 	font-family: "Libre Franklin", sans-serif;
 	font-style: normal;
 	font-optical-sizing: auto;
+	letter-spacing: rem(1.5);
 }
 
 li,
@@ -293,6 +299,10 @@ a {
 	padding-bottom: 1rem;
 }
 
+.pb-2 {
+	padding-bottom: 2rem;
+}
+
 /* Responsive */
 @media only screen and (max-width: 1920px) {
 	.res {
@@ -334,6 +344,13 @@ a {
 			padding-inline: rem(10);
 		}
 	}
+
+	.inner-wrapper--1680 {
+		&--mob .upper {
+			margin: auto;
+			max-width: 150px;
+		}
+	}
 }
 
 @media only screen and (max-width: 575px) {
@@ -341,11 +358,10 @@ a {
 		&--mob {
 			display: flex;
 			flex-direction: column;
-			gap: 2rem;
+			gap: 1rem;
 
 			.upper {
-				margin: auto;
-				max-width: 150px;
+				max-width: 120px;
 			}
 
 			.lower {
@@ -363,6 +379,47 @@ a {
 		&--desk {
 			display: none;
 		}
+	}
+
+	h1,
+	.h1 {
+		font-size: rem(30);
+	}
+	h2,
+	.h2 {
+		font-size: rem(25);
+	}
+	h3,
+	.h3 {
+		font-size: rem(22);
+	}
+	h4,
+	.h4 {
+		font-size: rem(20);
+	}
+	h5,
+	.h5 {
+		font-size: rem(22);
+	}
+	h6,
+	.h6 {
+		font-size: rem(18);
+	}
+
+	li,
+	.li {
+		font-size: rem(22);
+	}
+	p,
+	.p {
+		font-size: rem(16);
+	}
+	button,
+	.btn {
+		font-size: rem(30);
+	}
+	a {
+		font-size: rem(16);
 	}
 }
 

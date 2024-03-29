@@ -83,7 +83,7 @@ foreach ($matches as $match) {
                 <div class="left-col">
                     <h1 class="blue-ds pb-1"><?php echo $welcomeData['title']; ?></h1>
                     <p><?php echo $welcomeData['text']; ?></p>
-                    <a href="history" class="btn ticket ticket--left mt-1">
+                    <a href="history.php" class="btn ticket ticket--left mt-1">
                         <img src="media/img/ticket.png">
                         <div class="overlay-text">
                             <span class="button-text">History</span>
@@ -112,17 +112,17 @@ foreach ($matches as $match) {
                         <h2 class="blue-ds h1 pb-1"><?php echo $contactData['title']; ?></h2>
                         <p><?php echo $contactData['text']; ?></p>
                         <div class="contacts-wrapper mt-1">
-                            <?php foreach($contacts as $contact): ?>
-                            <div class="contact">
-                                <p class="h5"><?php echo $contact['name']?></p>
-                                <a class="link" href=" tel:<?php echo $contact['phone']; ?>">
-                                    <span class="fas fa-phone-alt"></span>
-                                </a>
+                            <?php foreach ($contacts as $contact) : ?>
+                                <div class="contact">
+                                    <p class="h5"><?php echo $contact['name'] ?></p>
+                                    <a class="link" href=" tel:<?php echo $contact['phone']; ?>">
+                                        <span class="fas fa-phone-alt"></span>
+                                    </a>
 
-                                <a class="link" href="mailto:<?php echo $contact['email']; ?>">
-                                    <span class="fas fa-envelope"></span>
-                                </a>
-                            </div>
+                                    <a class="link" href="mailto:<?php echo $contact['email']; ?>">
+                                        <span class="fas fa-envelope"></span>
+                                    </a>
+                                </div>
                             <?php endforeach; ?>
                         </div>
                     </div>
@@ -144,29 +144,25 @@ foreach ($matches as $match) {
                                 <span class="fab fa-instagram"></span>
                             </a>
                         </div>
-                    </div>
-                    <div class="map mt-2">
-                        <div class="mapouter">
-                            <div class="gmap_canvas">
-                                <iframe width="100%" height="100%" id="gmap_canvas"
-                                    src="https://maps.google.com/maps?q=%20The%20Forum%20Music%20Centre%20Borough%20Road%20Darlington%20DL1%201SG&t=k&z=19&ie=UTF8&iwloc=&output=embed"
-                                    frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
-                                <style>
-                                .mapouter {
-                                    position: relative;
-                                    text-align: right;
-                                    height: 100%;
-                                    width: 100%;
-                                }
-                                </style>
-                                <style>
-                                .gmap_canvas {
-                                    overflow: hidden;
-                                    background: none !important;
-                                    height: 100%;
-                                    width: 100%;
-                                }
-                                </style>
+                        <div class="map mt-2">
+                            <div class="mapouter">
+                                <div class="gmap_canvas">
+                                    <iframe width="100%" id="gmap_canvas" src="https://maps.google.com/maps?q=%20The%20Forum%20Music%20Centre%20Borough%20Road%20Darlington%20DL1%201SG&t=k&z=19&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+                                    <style>
+                                        .mapouter {
+                                            position: relative;
+                                            text-align: right;
+                                            width: 100%;
+                                        }
+                                    </style>
+                                    <style>
+                                        .gmap_canvas {
+                                            overflow: hidden;
+                                            background: none !important;
+                                            width: 100%;
+                                        }
+                                    </style>
+                                </div>
                             </div>
                         </div>
                     </div>

@@ -5,7 +5,7 @@
         </a>
         <ul class="links">
             <li>
-                <a>History</a>
+                <a href="history.php">History</a>
             </li>
             <li>
                 <a>Archive</a>
