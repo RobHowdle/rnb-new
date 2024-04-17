@@ -4,7 +4,7 @@
             <div class="audio-container">
                 <h1 class="blue-ds pb-1 text-center">Audio</h1>
                 <p class="text-center">In the mood for some music? Try our custom music player!</p>
-                <div class="audio-grid">
+                <div class="audio-grid mt-2">
                     <div class="player">
                         <div class="controls">
                             <div class="buttons">

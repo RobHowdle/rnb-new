@@ -1653,7 +1653,7 @@ a {
 }
 .slider-buttons-wrapper .swiper-button-prev,
 .slider-buttons-wrapper .swiper-button-next {
-  top: -7rem;
+  top: -3rem;
   bottom: 0;
   border-style: solid;
   border-color: #c6c4c4;
