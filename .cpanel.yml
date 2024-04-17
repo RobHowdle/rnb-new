@@ -1,5 +1,5 @@
 ---
 deployment:
   tasks:
-    - export DEPLOYPATH=/home/robsr2d2/public_html/rnbtest.robsrobots.co.uks
+    - export DEPLOYPATH=/home/robsr2d2/public_html/rnbtest.robsrobots.co.uk
     - /bin/cp -R * $DEPLOYPATH
