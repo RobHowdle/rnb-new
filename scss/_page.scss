@@ -228,6 +228,103 @@
 	border-width: 2px;
 }
 
+// Audio Player
+.audio-grid {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-gap: 4rem;
+}
+
+.player {
+	grid-column: 1/2;
+	display: flex;
+	gap: 1rem;
+	align-items: center;
+
+	.controls {
+		width: 15%;
+	}
+
+	.buttons {
+		display: flex;
+		flex-direction: column;
+		gap: 2rem;
+
+		img {
+			width: 100px;
+			height: 100px;
+		}
+	}
+}
+
+.record-player {
+	width: 100%;
+}
+
+.swiper {
+	margin-left: unset !important;
+	margin-right: unset !important;
+}
+
+.slider {
+	grid-column: 2/3;
+}
+
+.swiper-slide {
+	align-content: center;
+	max-width: 400px;
+
+	img {
+		width: 100%;
+		height: auto;
+	}
+}
+
+.slider-buttons-wrapper {
+	position: relative;
+
+	.swiper-button-prev {
+		left: 0;
+	}
+
+	.swiper-button-next {
+		left: 6rem;
+	}
+
+	.swiper-button-prev,
+	.swiper-button-next {
+		top: -7rem;
+		bottom: 0;
+		border-style: solid;
+		border-color: $lightGrey;
+		border-width: 1px;
+		background-color: $lightGrey;
+		color: $black;
+		padding: 0.25rem;
+		transition-property: background-color;
+		transition-duration: 300ms;
+		transition-timing-function: ease-in-out;
+		width: 35px;
+		height: 35px;
+
+		i {
+			font-size: rem(20);
+		}
+
+		&:hover {
+			background-color: $grey;
+
+			svg {
+				color: $lightGrey;
+			}
+		}
+
+		&:after {
+			display: none;
+		}
+	}
+}
+
 @media only screen and (max-width: 1920px) {
 	.grid-wrapper {
 		grid-gap: 3rem;

@@ -7,7 +7,7 @@
 
     <?php include 'includes/history_content.php'; ?>
 
-    <?php include 'includes/footer.php'; ?>
+    <?php include 'footer.php'; ?>
 </body>
 
 </html>

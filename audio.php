@@ -5,7 +5,7 @@
 <body>
     <?php include 'includes/nav.php'; ?>
 
-    <?php include 'includes/archive_content.php'; ?>
+    <?php include 'includes/audio_content.php'; ?>
 
     <?php include 'footer.php'; ?>
 </body>
