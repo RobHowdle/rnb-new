@@ -18,6 +18,7 @@ $medBlue: #007bff;
 $white: #fff;
 $black: #000;
 $transGrey: rgba(134, 142, 149, 0.8);
+$darkTransGrey: rgba(217, 217, 217, 0.3);
 
 /* Defaults */
 // reset everything
@@ -301,6 +302,15 @@ a {
 
 .pb-2 {
 	padding-bottom: 2rem;
+}
+
+.my-2 {
+	margin-block: 2rem;
+}
+
+// Alignment
+.text-center {
+	text-align: center;
 }
 
 /* Responsive */
