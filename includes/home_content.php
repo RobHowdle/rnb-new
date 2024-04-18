@@ -100,7 +100,7 @@ foreach ($matches as $match) {
                         <tbody class="eventlist">
                         </tbody>
                     </table>
-                    <a href="history" class="btn ticket ticket--left mt-1">
+                    <a target="_blank" href="https://www.ticketweb.uk/search?q=darlington+forum+music+centre" class="btn ticket ticket--left mt-1">
                         <img src="media/img/ticket.png">
                         <div class="overlay-text">
                             <span class="button-text">Tickets</span>
