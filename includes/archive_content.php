@@ -9,78 +9,99 @@
                 <?php
                 $data = file_get_contents('content/archive_data.txt');
                 $sections = preg_split('/\[year\]/', $data, -1, PREG_SPLIT_NO_EMPTY);
+
                 // Loop through each section (year)
                 foreach ($sections as $section) {
                     // Extract year, description, and bands from the section
                     preg_match('/(\d{4})\[\/year\]/', $section, $matches);
                     $year = $matches[1];
                 ?>
-                <div class="tab">
-                    <button class="tablinks"
-                        onclick="openTab(event, 'Tab<?php echo $year; ?>')"><?php echo $year; ?></button>
-                </div>
+                    <div class="tab">
+                        <button class="tablinks"
+                            onclick="openTab(event, 'Tab<?php echo $year; ?>')"><?php echo $year; ?></button>
+                    </div>
                 <?php
                 }
                 ?>
             </div>
             <?php
-            // Reset the loop to generate tab content separately
+            // Loop through each section (year)
             foreach ($sections as $section) {
+
                 // Extract year, description, and bands from the section
-                preg_match('/(\d{4})\[\/year\](.*?)\[\/description\](.*?)\[\/bands\]/s', $section, $matches);
-                $year = $matches[1];
-                $description = trim($matches[2] ?? ''); // Using null coalescing operator to handle cases where description is not found
-                $bands = trim($matches[3] ?? '');
+                preg_match('/^(\d{4})\[\/year\].*?\[description\](.*?)\[\/description\].*?\[bands\](.*?)\[\/bands\]/s', $section, $matches);
+
+
+                if (!empty($matches[1])) {
+                    $year = $matches[1]; // Year extracted correctly
+                } else {
+                    echo "Error: Year not found in section.<br>";
+                    continue; // Skip this section if year is invalid
+                }
+
+                $description = trim($matches[2] ?? ''); // Extract description content
+                $bands = trim($matches[3] ?? ''); // Extract bands content
             ?>
-            <div id="Tab<?php echo $year; ?>" class="tabcontent" style="display: none;">
-                <h3 class="h1 "><?php echo $year; ?></h3>
-                <?php if (!empty($description)) : ?>
-                <p class="h6 my-2"><?php echo $description; ?></p>
-                <?php endif; ?>
-                <?php if (!empty($bands)) : ?>
-                <p class="h2"><strong>Bands:</strong></p>
-                <ul>
-                    <?php
+                <div id="Tab<?php echo htmlspecialchars($year); ?>" class="tabcontent" style="display: none;">
+                    <h3 class="h1"><?php echo htmlspecialchars($year); ?></h3>
+                    <?php if (!empty($description)) : ?>
+                        <p class="h6 my-2"><?php echo nl2br(htmlspecialchars($description)); ?></p>
+                    <?php endif; ?>
+                    <?php if (!empty($bands)) : ?>
+                        <p class="h2"><strong>Bands:</strong></p>
+                        <ul>
+                            <?php
                             // Split bands by comma and loop through each band
                             $bands_array = explode(',', $bands);
                             foreach ($bands_array as $band) {
-                                echo "<li>$band</li>";
+                                echo '<li>' . htmlspecialchars(trim($band)) . '</li>';
                             }
                             ?>
-                </ul>
-                <?php endif; ?>
-            </div>
+                        </ul>
+                    <?php endif; ?>
+                </div>
             <?php
             }
             ?>
+
         </div>
     </div>
 </div>
 
 <script>
-function openFirstTab() {
-    var firstTabButton = document.querySelector('.tablinks');
-    if (firstTabButton) {
-        firstTabButton.click();
+    function openFirstTab() {
+        var firstTabButton = document.querySelector('.tablinks');
+        if (firstTabButton) {
+            firstTabButton.click();
+        }
     }
-}
 
-window.addEventListener('load', openFirstTab);
+    window.addEventListener('load', openFirstTab);
 
-function openTab(evt, tabName) {
-    var i, tabcontent, tablinks;
-    tabcontent = document.getElementsByClassName("tabcontent");
-    for (i = 0; i < tabcontent.length; i++) {
-        tabcontent[i].style.display = "none"; // Hide all tab content
-        tabcontent[i].classList.remove("active"); // Remove active class from all tab content
+    function openTab(evt, tabName) {
+        var i, tabcontent, tablinks;
+
+        // Hide all tab content
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+            tabcontent[i].classList.remove("active");
+        }
+
+        // Remove active class from all tab buttons
+        tablinks = document.getElementsByClassName("tablinks");
+        for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].classList.remove("active");
+        }
+
+        // Safeguard: Only update if the element exists
+        var tabElement = document.getElementById(tabName);
+        if (tabElement) {
+            tabElement.style.display = "block"; // Set display to block
+            tabElement.classList.add("active"); // Add active class
+            evt.currentTarget.classList.add("active"); // Highlight the clicked tab
+        } else {
+            console.error("Element with ID '" + tabName + "' not found.");
+        }
     }
-    tablinks = document.getElementsByClassName("tablinks");
-    for (i = 0; i < tablinks.length; i++) {
-        tablinks[i].className = tablinks[i].className.replace(" active",
-            ""); // Remove active class from all tab buttons
-    }
-    document.getElementById(tabName).style.display = "flex"; // Display the content of the selected tab
-    document.getElementById(tabName).classList.add("active"); // Add active class to the clicked tab content
-    evt.currentTarget.className += " active"; // Add active class to the clicked tab button
-}
 </script>

@@ -4,6 +4,8 @@ footer {
 	padding-block: 2rem;
 
 	.wrapper {
+		max-width: rem(1680);
+		margin-inline: auto;
 		display: grid;
 		grid-template-columns: repeat(3, 1fr);
 

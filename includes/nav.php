@@ -35,6 +35,7 @@
         </div>
         <div class="lower">
             <a href="archive.php" class="ticket ticket--left">
+                <img src="media/img/ticket.png">
                 <div class="overlay-text">
                     <span class="button-text">Archive</span>
                 </div>

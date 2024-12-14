@@ -192,6 +192,9 @@ textarea {
 
 .inner-wrapper {
 	&--1680 {
+		max-width: rem(1680);
+		margin-inline: auto;
+
 		&--desk {
 			max-width: rem(1680);
 			margin-inline: auto;
