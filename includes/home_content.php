@@ -100,10 +100,10 @@ foreach ($matches as $match) {
                         <tbody class="eventlist">
                         </tbody>
                     </table>
-                    <a target="_blank" href="https://www.ticketweb.uk/search?q=darlington+forum+music+centre" class="btn ticket ticket--left mt-1">
+                    <a target="_blank" href="https://theforumonline.co.uk/events/" class="btn ticket ticket--left mt-1">
                         <img src="media/img/ticket.png">
                         <div class="overlay-text">
-                            <span class="button-text">Tickets</span>
+                            <span class="button-text">Events</span>
                         </div>
                     </a>
                 </div>
@@ -147,7 +147,9 @@ foreach ($matches as $match) {
                         <div class="map mt-2">
                             <div class="mapouter">
                                 <div class="gmap_canvas">
-                                    <iframe width="100%" id="gmap_canvas" src="https://maps.google.com/maps?q=%20The%20Forum%20Music%20Centre%20Borough%20Road%20Darlington%20DL1%201SG&t=k&z=19&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+                                    <iframe width="100%" id="gmap_canvas"
+                                        src="https://maps.google.com/maps?q=%20The%20Forum%20Music%20Centre%20Borough%20Road%20Darlington%20DL1%201SG&t=k&z=19&ie=UTF8&iwloc=&output=embed"
+                                        frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
                                     <style>
                                         .mapouter {
                                             position: relative;

@@ -112,8 +112,8 @@
 
 [year]2023[/year]
 [description][/description]
-[bands]Friday 13th January: JAMES OLIVER BAND, Friday 10th February: THE WILSON BROTHERS, Friday 10th March: CATFISH, Friday 14th April: THE STUMBLE, Saturday 12th May: THE HIDING MAGPIES, Friday 9th June: THE BAD DAY, Friday 14th July: BRAVE RIVAL + IAN SIMMO DUO, Friday 11th August: THE PRODUCERS, Friday 8th September: THE BANDITS, Friday 13th October: DIRT ROAD BAND, Friday 10th November: THE CINELLI BROTHERS, Friday 8th December: THE REVOLUTIONARIES + DC BLUES BAND[/bands]
+[bands]Friday 13th January: JAMES OLIVER BAND, Friday 10th February: THE WILSON BROTHERS, Friday 10th March: CATFISH, Friday 14th April: THE STUMBLE, Saturday 12th May: THE HIDING MAGPIES, Friday 9th June: THE BAD DAY, Friday 14th July: BRAVE RIVAL, Friday 11th August: THE PRODUCERS, Friday 8th September: THE BANDITS, Friday 13th October: DIRT ROAD BAND, Friday 10th November: THE CINELLI BROTHERS, Friday 8th December: THE REVOLUTIONARIES + DC BLUES BAND[/bands]
 
 [year]2024[/year]
 [description][/description]
-[bands]Friday 12th January: MITCH LADDIE BAND, Friday 9th February: ROBIN BIBI BAND, Friday 8th March: GERRY JABLONSKI BAND, Friday 12th April: ELI & THE BLUES PROPHETS: Friday 10th May: REDFISH, Friday 14th June: THE DUST RAISERS, Friday 12th July: KUNG FU BLUES, Friday 9th August: BIG WOLF BAND, Friday 13th September: RAY STUBBS RnB ALLSTARS, Friday 11th October: DC BLUES BAND, Friday 8th November: TOM KILLNER[/bands]
+[bands]Friday 12th January: MITCH LADDIE BAND, Friday 9th February: ROBIN BIBI BAND, Friday 8th March: GERRY JABLONSKI BAND, Friday 12th April: ELI & THE BLUES PROPHETS, Friday 10th May: REDFISH, Friday 14th June: THE DUST RAISERS, Friday 12th July: KUNG FU BLUES, Friday 9th August: BIG WOLF BAND, Friday 13th September: RAY STUBBS RnB ALLSTARS, Friday 11th October: DC BLUES BAND, Friday 8th November: TOM KILLNER, Friday 13th December: THE STUMBLE + Chris James & Martin Fletcher[/bands]
