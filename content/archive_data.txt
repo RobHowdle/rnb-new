@@ -117,3 +117,7 @@
 [year]2024[/year]
 [description][/description]
 [bands]Friday 12th January: MITCH LADDIE BAND, Friday 9th February: ROBIN BIBI BAND, Friday 8th March: GERRY JABLONSKI BAND, Friday 12th April: ELI & THE BLUES PROPHETS, Friday 10th May: REDFISH, Friday 14th June: THE DUST RAISERS, Friday 12th July: KUNG FU BLUES, Friday 9th August: BIG WOLF BAND, Friday 13th September: RAY STUBBS RnB ALLSTARS, Friday 11th October: DC BLUES BAND, Friday 8th November: TOM KILLNER, Friday 13th December: THE STUMBLE + Chris James & Martin Fletcher[/bands]
+
+[year]2025[/year]
+[description][/description]
+[bands]Friday 10th January: MICK McCONNEL & BLUE THUNDER[/bands]
